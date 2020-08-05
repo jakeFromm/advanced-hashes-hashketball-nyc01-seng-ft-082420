@@ -219,12 +219,13 @@ def big_shoe_rebounds
       if data.is_a?(Array)
         data.each do |data_item|
           if data_item.is_a?(Hash)
+            binding.pry
             if data_item[:shoe] > big_shoe
               big_shoe = data_item[:shoe]
             end
             if data_item[:shoe] = big_shoe
               return data_item[:rebounds]
-              binding.pry
+              
             end   
           end   
         end   
