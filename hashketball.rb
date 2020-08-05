@@ -222,7 +222,7 @@ def big_shoe_rebounds
             if data_item[:shoe] > big_shoe
               big_shoe = data_item[:shoe]
             end
-            if data_item[:shoe] == big_shoe
+            if data_item[:shoe] = big_shoe
               
             end   
           end   
