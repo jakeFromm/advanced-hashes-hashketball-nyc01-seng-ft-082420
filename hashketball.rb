@@ -214,7 +214,7 @@ end
 
 def big_shoe_rebounds
   big_shoe = 0 
-  shoes = []
+  player = ""
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if data.is_a?(Array)
@@ -224,7 +224,6 @@ def big_shoe_rebounds
               shoe = data_item[:shoe]
             end   
           end
-          binding.pry
         end   
       end     
     end
