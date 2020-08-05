@@ -220,7 +220,9 @@ def big_shoe_rebounds
       if data.is_a?(Array)
         data.each do |data_item|
           if data_item.is_a?(Hash)
-            shoes << data_item[:shoe]  
+            if data_item[:shoe] > shoe
+              shoe = data_item[:shoe]
+            end   
           end
           binding.pry
         end   
