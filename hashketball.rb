@@ -213,3 +213,17 @@ def player_stats(player)
 end 
 
 def big_shoe_rebounds(player)
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if data.is_a?(Array)
+        data.each do |data_item|
+          if data_item.is_a?(Hash)
+            if data_item[:player_name] == player 
+              return data_item
+            end   
+          end   
+        end   
+      end     
+    end
+  end
+end   
