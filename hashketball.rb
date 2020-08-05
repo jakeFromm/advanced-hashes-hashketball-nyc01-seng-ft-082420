@@ -224,6 +224,7 @@ def big_shoe_rebounds
             end
             if data_item[:shoe] = big_shoe
               return data_item[:rebounds]
+              binding.pry
             end   
           end   
         end   
