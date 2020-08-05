@@ -222,7 +222,7 @@ def big_shoe_rebounds
           if data_item.is_a?(Hash)
             shoes << data_item[:shoe]  
           end
-          
+          binding.pry
         end   
       end     
     end
