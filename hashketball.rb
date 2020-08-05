@@ -223,7 +223,7 @@ def big_shoe_rebounds
               big_shoe = data_item[:shoe]
             end
             if data_item[:shoe] = big_shoe
-              
+              return data_item[:player_name]
             end   
           end   
         end   
